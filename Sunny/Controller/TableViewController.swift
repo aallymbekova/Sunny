@@ -18,6 +18,9 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor(named: "backgroundColor")
+
+        
         for city in nameCitiesArray {
             networkWeatherManager.fetchCurrentWeather(forRequestType: .cityName(city: city))
             networkWeatherManager.onCompletion = {[weak self] currentWeather in

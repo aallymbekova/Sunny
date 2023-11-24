@@ -112,12 +112,20 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Weather" id="zb7-Iz-8Qd">
-                        <barButtonItem key="rightBarButtonItem" image="list.triangle" catalog="system" id="x9g-x4-2AA">
-                            <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <connections>
-                                <segue destination="Zqg-xs-6ns" kind="show" id="YvY-dT-axi"/>
-                            </connections>
-                        </barButtonItem>
+                        <rightBarButtonItems>
+                            <barButtonItem image="list.triangle" catalog="system" id="x9g-x4-2AA">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="Zqg-xs-6ns" kind="show" id="YvY-dT-axi"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="gearshape.fill" catalog="system" id="WKt-fF-XJ3">
+                                <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <segue destination="hQJ-vi-viF" kind="show" id="zdg-ct-qeY"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="cityDescription" destination="nTH-z8-lLw" id="iez-Pb-iDJ"/>
@@ -227,6 +235,39 @@
             </objects>
             <point key="canvasLocation" x="1429" y="82"/>
         </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="eMM-ih-U65">
+            <objects>
+                <viewController id="hQJ-vi-viF" customClass="SettingsViewController" customModule="Sunny" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ga-JD-sYY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lUA-gr-GXp">
+                                <rect key="frame" x="20" y="108" width="374" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="device"/>
+                                    <segment title="light"/>
+                                    <segment title="dark"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeMode:" destination="hQJ-vi-viF" eventType="valueChanged" id="avH-xi-dtP"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="aI9-4v-iKK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9sC-7m-lIT"/>
+                    <connections>
+                        <outlet property="changeModeLabel" destination="lUA-gr-GXp" id="LuV-lj-E4C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EGv-Fk-yzx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076.8115942028987" y="745.98214285714278"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="MWE-Dx-2Wz">
             <objects>
@@ -247,6 +288,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="list.triangle" catalog="system" width="128" height="91"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">

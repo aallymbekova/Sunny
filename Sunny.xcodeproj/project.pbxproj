@@ -22,6 +22,8 @@
 		48E835572B0FBDDB008C74F9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E835562B0FBDDB008C74F9 /* TableViewController.swift */; };
 		48E835592B0FBEB3008C74F9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E835582B0FBEB3008C74F9 /* TableViewCell.swift */; };
 		48E8355B2B10DBA1008C74F9 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8355A2B10DBA1008C74F9 /* UIAlertController.swift */; };
+		48E8355F2B10E142008C74F9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8355E2B10E142008C74F9 /* SettingsViewController.swift */; };
+		48E835612B10E16A008C74F9 /* MTUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E835602B10E16A008C74F9 /* MTUserDefaults.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		48E835562B0FBDDB008C74F9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		48E835582B0FBEB3008C74F9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		48E8355A2B10DBA1008C74F9 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
+		48E8355E2B10E142008C74F9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		48E835602B10E16A008C74F9 /* MTUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTUserDefaults.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +98,7 @@
 				4860C7992B0D0E5B00B703D6 /* ViewController.swift */,
 				48E835562B0FBDDB008C74F9 /* TableViewController.swift */,
 				48E835582B0FBEB3008C74F9 /* TableViewCell.swift */,
+				48E8355E2B10E142008C74F9 /* SettingsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -131,6 +136,7 @@
 				4860C7AB2B0E611500B703D6 /* Constants.swift */,
 				4860C7B32B0E82F100B703D6 /* DataSource.swift */,
 				48E8355A2B10DBA1008C74F9 /* UIAlertController.swift */,
+				48E835602B10E16A008C74F9 /* MTUserDefaults.swift */,
 			);
 			path = "Supporting files";
 			sourceTree = "<group>";
@@ -216,7 +222,9 @@
 				4860C7982B0D0E5B00B703D6 /* SceneDelegate.swift in Sources */,
 				4860C7B42B0E82F100B703D6 /* DataSource.swift in Sources */,
 				48E835572B0FBDDB008C74F9 /* TableViewController.swift in Sources */,
+				48E835612B10E16A008C74F9 /* MTUserDefaults.swift in Sources */,
 				4860C7AA2B0E5E0100B703D6 /* NetworkWeatherManager.swift in Sources */,
+				48E8355F2B10E142008C74F9 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

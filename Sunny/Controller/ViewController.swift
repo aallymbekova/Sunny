@@ -20,6 +20,7 @@ class ViewController: UIViewController {
     lazy var locationManager = CLLocationManager()
 
     override func viewDidLoad() {
+        view.backgroundColor = UIColor(named: "backgroundColor")
         
         startLocationManager()
         
