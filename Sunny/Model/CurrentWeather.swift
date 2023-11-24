@@ -8,19 +8,19 @@
 import Foundation
 
 struct CurrentWeather {
-    let cityName: String
+    var cityName: String = ""
     
-    let cityTemprature: Double
+    var cityTemprature: Double = 0.0
     var cityTempratureString: String {
         return String(format: "%.0f", cityTemprature)
     }
     
-    let cityFeelsLikeTemprature: Double
+    var cityFeelsLikeTemprature: Double = 0.0
     var cityFeelsLikeTempratureString: String {
         return String(format: "%.0f", cityFeelsLikeTemprature)
     }
     
-    let conditionCode: Int
+    var conditionCode: Int = 0
     var systemIconNameString: String {
         switch conditionCode {
         case 200...232: return "cloud.bolt.rain.fill"
@@ -34,7 +34,7 @@ struct CurrentWeather {
         }
     }
     
-    let description: String
+    var description: String = ""
     
     init?(currentWeatherData: CurrentWeatherData) {
         cityName = currentWeatherData.name
@@ -43,5 +43,7 @@ struct CurrentWeather {
         conditionCode = currentWeatherData.weather.first!.id
         description = DataSource.weatherIDs[currentWeatherData.weather[0].id] ?? ""
     }
+    
+    init() {}
     
 }

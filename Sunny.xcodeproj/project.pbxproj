@@ -19,6 +19,9 @@
 		4860C7B22B0E772D00B703D6 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860C7B12B0E772D00B703D6 /* CurrentWeather.swift */; };
 		4860C7B42B0E82F100B703D6 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4860C7B32B0E82F100B703D6 /* DataSource.swift */; };
 		4860C7B72B0FB12F00B703D6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4860C7B62B0FB12F00B703D6 /* CoreLocation.framework */; };
+		48E835572B0FBDDB008C74F9 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E835562B0FBDDB008C74F9 /* TableViewController.swift */; };
+		48E835592B0FBEB3008C74F9 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E835582B0FBEB3008C74F9 /* TableViewCell.swift */; };
+		48E8355B2B10DBA1008C74F9 /* UIAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E8355A2B10DBA1008C74F9 /* UIAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +39,9 @@
 		4860C7B12B0E772D00B703D6 /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		4860C7B32B0E82F100B703D6 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		4860C7B62B0FB12F00B703D6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		48E835562B0FBDDB008C74F9 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		48E835582B0FBEB3008C74F9 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		48E8355A2B10DBA1008C74F9 /* UIAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIAlertController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,13 +78,11 @@
 			children = (
 				4860C7952B0D0E5B00B703D6 /* AppDelegate.swift */,
 				4860C7972B0D0E5B00B703D6 /* SceneDelegate.swift */,
-				4860C7AD2B0E6FFC00B703D6 /* Controller */,
 				4860C7AE2B0E700900B703D6 /* Model */,
-				4860C7AB2B0E611500B703D6 /* Constants.swift */,
-				4860C7B32B0E82F100B703D6 /* DataSource.swift */,
-				4860C79B2B0D0E5B00B703D6 /* Main.storyboard */,
+				48E8355C2B10E000008C74F9 /* View */,
+				4860C7AD2B0E6FFC00B703D6 /* Controller */,
+				48E8355D2B10E019008C74F9 /* Supporting files */,
 				4860C79E2B0D0E5D00B703D6 /* Assets.xcassets */,
-				4860C7A02B0D0E5D00B703D6 /* LaunchScreen.storyboard */,
 				4860C7A32B0D0E5D00B703D6 /* Info.plist */,
 			);
 			path = Sunny;
@@ -88,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				4860C7992B0D0E5B00B703D6 /* ViewController.swift */,
+				48E835562B0FBDDB008C74F9 /* TableViewController.swift */,
+				48E835582B0FBEB3008C74F9 /* TableViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,6 +114,25 @@
 				4860C7B62B0FB12F00B703D6 /* CoreLocation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		48E8355C2B10E000008C74F9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4860C79B2B0D0E5B00B703D6 /* Main.storyboard */,
+				4860C7A02B0D0E5D00B703D6 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		48E8355D2B10E019008C74F9 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				4860C7AB2B0E611500B703D6 /* Constants.swift */,
+				4860C7B32B0E82F100B703D6 /* DataSource.swift */,
+				48E8355A2B10DBA1008C74F9 /* UIAlertController.swift */,
+			);
+			path = "Supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,9 +210,12 @@
 				4860C79A2B0D0E5B00B703D6 /* ViewController.swift in Sources */,
 				4860C7B02B0E70CB00B703D6 /* CurrentWeatherData.swift in Sources */,
 				4860C7B22B0E772D00B703D6 /* CurrentWeather.swift in Sources */,
+				48E8355B2B10DBA1008C74F9 /* UIAlertController.swift in Sources */,
 				4860C7962B0D0E5B00B703D6 /* AppDelegate.swift in Sources */,
+				48E835592B0FBEB3008C74F9 /* TableViewCell.swift in Sources */,
 				4860C7982B0D0E5B00B703D6 /* SceneDelegate.swift in Sources */,
 				4860C7B42B0E82F100B703D6 /* DataSource.swift in Sources */,
+				48E835572B0FBDDB008C74F9 /* TableViewController.swift in Sources */,
 				4860C7AA2B0E5E0100B703D6 /* NetworkWeatherManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
